@@ -68,3 +68,8 @@ h1,h2 {
     top: -70px;
     visibility: hidden;
 }
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
