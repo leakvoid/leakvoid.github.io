@@ -11,7 +11,7 @@ const translations = {
     "about-intro": "Hi, my name is Dmitry Chernyshev and I'm a software developer.",
     "about-experience": "I have years of experience working in different fields, including building client- and server-side applications, implementations of different network protocols and algorithms, development of specialized neural networks.",
     "about-tools": "Some of the tools I worked with include: <strong>C/C++</strong>, <strong>Python</strong> and <strong>PHP</strong> programming languages, <strong>MySQL</strong> and <strong>PostgreSQL</strong> databases, various <strong>Linux</strong> tools and scripting languages.",
-    "about-gamedev": "For a long time I wanted to pursue game development, and some time ago I made a decision to change direction of my career. I've been learning about <strong>Unity</strong> engine, <strong>C#</strong>, <strong>Shaders</strong>, various aspects of game development and recently finished large demonstration project for my portfolio.",
+    "about-gamedev": "For a long time I wanted to pursue game development, and some time ago I made a decision to change direction of my career. I've been learning about <strong>Unity</strong> engine, <strong>C#</strong>, <strong>Netcode</strong>, <strong>Shaders (HLSL)</strong>, various aspects of game development and recently finished large demonstration project for my portfolio.",
     "about-resume": "Resume on hh.ru: <a href='https://hh.ru/applicant/resumes/view?resume=3c563eccff0cc173e70039ed1f6e4359467957'>link</a>",
     // projects
     "new-projects-section": "New Portfolio Projects (Game development)",
@@ -70,7 +70,7 @@ const translations = {
     "about-intro": "Привет, меня зовут Дмитрий Чернышев, и я разработчик программного обеспечения.",
     "about-experience": "У меня есть многолетний опыт работы в различных областях, включая создание клиентских и серверных приложений, реализацию различных сетевых протоколов и алгоритмов, разработку специализированных нейронных сетей.",
     "about-tools": "Некоторые инструменты, с которыми я работал, включают: языки программирования <strong>C/C++</strong>, <strong>Python</strong> и <strong>PHP</strong>, базы данных <strong>MySQL</strong> и <strong>PostgreSQL</strong>, различные инструменты и скриптовые языки <strong>Linux</strong>.",
-    "about-gamedev": "Долгое время я хотел заниматься разработкой игр, и недавно я решил сменить направление своей карьеры. Я изучал движок <strong>Unity</strong>, <strong>C#</strong>, <strong>шейдеры</strong>, различные аспекты разработки игр и завершил несколько демонстрационных проектов для своего портфолио.",
+    "about-gamedev": "Долгое время я хотел заниматься разработкой игр, и недавно я решил сменить направление своей карьеры. Я изучал движок <strong>Unity</strong>, <strong>C#</strong>, <strong>Netcode</strong>, <strong>Шейдеры (HLSL)</strong>, различные аспекты разработки игр и завершил несколько демонстрационных проектов для своего портфолио.",
     "about-resume": "Резюме на hh.ru: <a href='https://hh.ru/applicant/resumes/view?resume=3c563eccff0cc173e70039ed1f6e4359467957'>ссылка</a>",
     // projects
     "new-projects-section": "Новые проекты (Gamedev)",
