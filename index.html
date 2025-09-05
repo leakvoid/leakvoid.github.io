@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
@@ -11,11 +12,12 @@
         <p id="logo">Portfolio</p>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#portfolio-section">Projects</a></li>
-            <li><a href="#education-job-section">Education & Job</a></li>
-	          <li><a href="#certificates-section">Certificates</a></li>
-            <li><a href="#contact-info-section">Contact Info</a></li>
+            <li><a href="#about-section" data-lang-key="nav-about">About</a></li>
+            <li><a href="#portfolio-section" data-lang-key="nav-projects">Projects</a></li>
+            <li><a href="#education-job-section" data-lang-key="nav-education-job">Education & Job</a></li>
+	        <li><a href="#certificates-section" data-lang-key="nav-certificates">Certificates</a></li>
+            <li><a href="#contact-info-section" data-lang-key="nav-contact">Contact Info</a></li>
+            <li><a id="lang-toggle">Русский</a></li>
           </ul>
         </nav>
       </div>
@@ -25,17 +27,12 @@
       <div class="well">
         <div class="row">
           <div class="col-xs-offset-1 col-xs-6">
-            <h1>About</h1>
-            <p>Hi, my name is Dmitry Chernyshev and I'm a software developer.</p>
-            <p>I have years of experience working in different fields, including building client- and server-side applications, implementations of different network protocols and algorithms, development of specialized neural networks.</p>
-            <p>Some of the tools I worked with include: <strong>C/C++</strong>, <strong>Python</strong> and <strong>PHP</strong> programming languages, <strong>MySQL</strong> and <strong>PostgreSQL</strong> databases, various <strong>Linux</strong> tools and scripting languages.</p>
-            <p>For a long time I wanted to pursue game development, and some time ago I made a decision to change direction of my carrier. I've been learning about <strong>Unity</strong> engine, <strong>C#</strong>, <strong>Shaders</strong>, various aspects of game development and recently finished large demonstration project for my portfolio.</p>
-            <p>Resume on hh.ru: <a href="https://hh.ru/applicant/resumes/view?resume=3c563eccff0cc173e70039ed1f6e4359467957">link</a></p>
-            <!--<p><strike>Recently, I've been educating myself through online courses to transition into full-stack web development(with focus on <strong>node.js</strong>, <strong>React</strong> and <strong>ES6</strong>). I've built many websites and web-applications, some of which can be found below in my portfolio.</strike></p>
-            <p>I have worked as a full-stack web developer for a while and decided to switch the direction of my career.</p>
-            <p>I've been going through courses and studying <strong>Artificial Intelligence</strong>, <strong>Algorithms and Data Structures</strong> areas as well as learning corresponding practical tools (<strong>TensorFlow</strong>, <strong>Numpy</strong>), also including more general preparation for technical job interviews.</p>
-            <p> Examples of my projects related to AI and web development can be found below.</p>
-            <p> Solutions for problems and tasks related to algorithms and data structures can be found on my <a href="https://github.com/leakvoid/" target="_blank">Github</a> and <a href="https://leetcode.com/leakvoid/" target="_blank">Leetcode</a> profile pages.</p>-->
+            <h1 data-lang-key="about-title">About</h1>
+            <p data-lang-key="about-intro">Hi, my name is Dmitry Chernyshev and I'm a software developer.</p>
+            <p data-lang-key="about-experience">I have years of experience working in different fields, including building client- and server-side applications, implementations of different network protocols and algorithms, development of specialized neural networks.</p>
+            <p data-lang-key="about-tools">Some of the tools I worked with include: <strong>C/C++</strong>, <strong>Python</strong> and <strong>PHP</strong> programming languages, <strong>MySQL</strong> and <strong>PostgreSQL</strong> databases, various <strong>Linux</strong> tools and scripting languages.</p>
+            <p data-lang-key="about-gamedev">For a long time I wanted to pursue game development, and some time ago I made a decision to change direction of my carrier. I've been learning about <strong>Unity</strong> engine, <strong>C#</strong>, <strong>Netcode</strong>, <strong>Shaders (HLSL)</strong>, various aspects of game development and recently finished large demonstration project for my portfolio.</p>
+            <p data-lang-key="about-resume">Resume on hh.ru: <a href="https://hh.ru/applicant/resumes/view?resume=3c563eccff0cc173e70039ed1f6e4359467957">link</a></p>
           </div>
           <div class="col-xs-4">
             <img src="images/me_f.png" alt="My Image" alt="My Photo" class="img-circle img-responsive"/>
@@ -44,27 +41,33 @@
       </div>
       <a class="anchor" id="portfolio-section"></a>
       <div class="well">
-        <h1>New Portfolio Projects (Game development)</h1>
+        <h1 data-lang-key="new-projects-section">New Portfolio Projects (Game development)</h1>
         <div class="row">
-          <h3 class="project-title"><a href="https://github.com/leakvoid/the_colony" target="_blank">The colony - medieval town simulator</a></h3>
+          <h3 class="project-title"><a href="https://github.com/leakvoid/the_colony" target="_blank" data-lang-key="colony-project">The colony - medieval town simulator</a></h3>
           <div class="col-xs-offset-1 col-xs-10">
             <iframe src="https://www.youtube.com/embed/7LnZFVesVDA"></iframe>
           </div>
         </div>
         <div class="row">
-          <h3 class="project-title"><a href="https://github.com/leakvoid/" target="_blank">Basic RPG combat</a></h3>
+          <h3 class="project-title"><a href="https://github.com/leakvoid/mobile_rpg_mechanics" target="_blank" data-lang-key="mobile-rpg-project">Mobile RPG mechanics</a></h3>
+          <div class="col-xs-offset-1 col-xs-10">
+            <iframe src="https://www.youtube.com/watch?v=GjoJiCfhPrs"></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="project-title"><a href="https://github.com/leakvoid/basic_rpg_combat" target="_blank" data-lang-key="basic-rpg-project">Basic RPG combat</a></h3>
           <div class="col-xs-offset-1 col-xs-10">
             <iframe src="https://www.youtube.com/embed/w3lgdqou5bk"></iframe>
           </div>
         </div>
         <div class="row">
-          <h3 class="project-title"><a href="https://github.com/leakvoid/" target="_blank">Not a terraria (Platformer mechanics)</a></h3>
+          <h3 class="project-title"><a href="https://github.com/leakvoid/not_a_terraria" target="_blank" data-lang-key="not-terraria-project">Not a terraria (Platformer mechanics)</a></h3>
           <div class="col-xs-offset-1 col-xs-10">
             <iframe src="https://www.youtube.com/embed/pd51aOAtUrU"></iframe>
           </div>
         </div>
         <div class="row">
-          <h3 class="project-title"><a href="https://github.com/leakvoid/shortest_path_visualisation" target="_blank">Shortest path finder</a></h3>
+          <h3 class="project-title"><a href="https://github.com/leakvoid/shortest_path_visualisation" target="_blank" data-lang-key="shortest-path-project">Shortest path finder</a></h3>
           <div class="col-xs-offset-1 col-xs-5">
             <img src="images/shortest_path.png" alt="Project image" class="img-responsive img-thumbnail portfolio-image" />
           </div>
@@ -72,7 +75,7 @@
             <img src="images/shortest_maze.png" alt="Project image" class="img-responsive img-thumbnail portfolio-image" />
           </div>
         </div>
-        <h1>Old Portfolio Projects (AI and ML)</h1>
+        <h1 data-lang-key="old-ai-projects-section">Old Portfolio Projects (AI and ML)</h1>
         <div class="row">
           <div class="col-xs-offset-1 col-xs-5">
             <h3 class="project-title"><a href="https://github.com/leakvoid/deep-learning-tasks/tree/master/1.%20neural%20networks%20and%20deep%20learning/week%203/jupiter" target="_blank">Planar shape finder</a></h3>
@@ -103,7 +106,7 @@
             <img src="images/segmentation.png" alt="Project image" class="img-responsive img-thumbnail portfolio-image" />
           </div>
         </div>
-        <h1>Old Portfolio Projects (Web Development)</h1>
+        <h1 data-lang-key="old-web-projects-section">Old Portfolio Projects (Web Development)</h1>
         <div class="row">
           <div class="col-xs-offset-1 col-xs-5">
             <h3 class="project-title"><a href="http://codepen.io/leakvoid/full/MyxVqX/" target="_blank">Wikipedia Viewer</a></h3>
@@ -162,23 +165,23 @@
       </div>
       <a class="anchor" id="education-job-section"></a>
       <div class="well">
-        <h1>Education & Job</h1>
+        <h1 data-lang-key="nav-education-job">Education & Job</h1>
 	      <div class="row">
           <div class="col-xs-offset-1 col-xs-1">
           </div>
           <div class="col-xs-10">
             <div class="row">
               <div class="col-xs-2">
-                <p class="education-job-text"><strong>Place</strong></p>
+                <p class="education-job-text" data-lang-key="job-section-place"><strong>Place</strong></p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text"><strong>Position</strong></p>
+                <p class="education-job-text" data-lang-key="job-section-position"><strong>Position</strong></p>
               </div>
 	            <div class="col-xs-2">
-                <p class="education-job-text"><strong>Date</strong></p>
+                <p class="education-job-text" data-lang-key="job-section-date"><strong>Date</strong></p>
               </div>
               <div class="col-xs-4">
-                <p class="education-job-text"><strong>Description</strong></p>
+                <p class="education-job-text" data-lang-key="job-section-description"><strong>Description</strong></p>
               </div>
             </div>
           </div>
@@ -190,16 +193,16 @@
           <div class="col-xs-10">
             <div class="row">
               <div class="col-xs-2">
-                <p class="education-job-text"><a href="https://www.topuniversities.com/universities/moscow-technical-university-communications-informatics"> Moscow Technical University of Communications and Informatics</a></p>
+                <p class="education-job-text"><a href="https://www.topuniversities.com/universities/moscow-technical-university-communications-informatics" data-lang-key="education-job-mtuci-place"> Moscow Technical University of Communications and Informatics</a></p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text">Student (Information systems and technology)</p>
+                <p class="education-job-text" data-lang-key="education-job-mtuci-position">Student (Information systems and technology)</p>
               </div>
 	            <div class="col-xs-2">
                 <p class="education-job-text"><strong>2008 - 2013</strong></p>
               </div>
               <div class="col-xs-5">
-                <p class="education-job-text"> Computer Science and System Administration related higher education</p>
+                <p class="education-job-text" data-lang-key="education-job-mtuci-description"> Computer Science and System Administration related higher education</p>
               </div>
             </div>
           </div>
@@ -212,16 +215,16 @@
           <div class="col-xs-10">
             <div class="row">
               <div class="col-xs-2">
-                <p class="education-job-text"><a href="https://www.netup.tv/en/"> NetUP Inc.</a></p>
+                <p class="education-job-text"><a href="https://www.netup.tv/en/"  data-lang-key="education-job-netup-place"> NetUP Inc.</a></p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text"> Software Developer</p>
+                <p class="education-job-text" data-lang-key="education-job-netup-position"> Software Developer</p>
               </div>
 	            <div class="col-xs-2">
                 <p class="education-job-text"><strong>2012 - 2015</strong></p>
               </div>
               <div class="col-xs-5">
-                <p class="education-job-text"> Development of phone/VOIP/internet billing core with client and administrative tools (UTM5 / UTM6 packages)</p>
+                <p class="education-job-text" data-lang-key="education-job-netup-description"> Development of phone/VOIP/internet billing core with client and administrative tools (UTM5 / UTM6 packages)</p>
               </div>
             </div>
           </div>
@@ -234,16 +237,16 @@
           <div class="col-xs-10">
             <div class="row">
               <div class="col-xs-2">
-                <p class="education-job-text"> freelance</p>
+                <p class="education-job-text" data-lang-key="education-job-freelance-place"> freelance</p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text"> Software Developer</p>
+                <p class="education-job-text" data-lang-key="education-job-freelance-position"> Software Developer</p>
               </div>
 	            <div class="col-xs-2">
                 <p class="education-job-text"><strong>2016</strong></p>
               </div>
               <div class="col-xs-5">
-                <p class="education-job-text"> Server-side related tasks, network modules and DB logic for minor projects</p>
+                <p class="education-job-text" data-lang-key="education-job-freelance-description"> Server-side related tasks, network modules and DB logic for minor projects</p>
               </div>
             </div>
           </div>
@@ -256,16 +259,16 @@
           <div class="col-xs-10">
             <div class="row">
               <div class="col-xs-2">
-                <p class="education-job-text"><a href="https://www.freecodecamp.org/leakvoid"> freecodecamp</a></p>
+                <p class="education-job-text"><a href="https://www.freecodecamp.org/leakvoid" data-lang-key="education-job-fcc-place"> freecodecamp</a></p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text"> Student</p>
+                <p class="education-job-text" data-lang-key="education-job-fcc-position"> Student</p>
               </div>
 	            <div class="col-xs-2">
                 <p class="education-job-text"><strong>2016</strong></p>
               </div>
               <div class="col-xs-5">
-                <p class="education-job-text"> Online courses(1200 hours) with focus on frontend(HTML, CSS, JS, React) and backend(node.js, express, mongodb) technologies</p>
+                <p class="education-job-text" data-lang-key="education-job-fcc-description"> Online courses(1200 hours) with focus on frontend(HTML, CSS, JS, React) and backend(node.js, express, mongodb) technologies</p>
               </div>
             </div>
           </div>
@@ -281,13 +284,13 @@
                 <p class="education-job-text"><a href="https://www.bnesim.com/"> BNESIM</a></p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text"> Full-Stack Web Developer</p>
+                <p class="education-job-text" data-lang-key="education-job-bnesim-position"> Full-Stack Web Developer</p>
               </div>
 	            <div class="col-xs-2">
                 <p class="education-job-text"><strong>2017 - 2021</strong></p>
               </div>
               <div class="col-xs-5">
-                <p class="education-job-text"> Development of client- and server-side tools which handle payment, billing, invoice and simcard managment</p>
+                <p class="education-job-text" data-lang-key="education-job-bnesim-description"> Development of client- and server-side tools which handle payment, billing, invoice and simcard managment</p>
               </div>
             </div>
           </div>
@@ -303,13 +306,13 @@
                 <p class="education-job-text"><a href="https://www.deeplearning.ai/programs/"> deeplearning.ai</a></p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text"> Student</p>
+                <p class="education-job-text" data-lang-key="education-job-deeplearning-position"> Student</p>
               </div>
 	            <div class="col-xs-2">
                 <p class="education-job-text"><strong>2021</strong></p>
               </div>
               <div class="col-xs-5">
-                <p class="education-job-text"> Courses on deep learning, AI and related topics; primarily on <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3URDFYUAVBQF">coursera</a> and deeplearning.ai</p>
+                <p class="education-job-text" data-lang-key="education-job-deeplearning-description"> Courses on deep learning, AI and related topics; primarily on <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3URDFYUAVBQF">coursera</a> and deeplearning.ai</p>
               </div>
             </div>
           </div>
@@ -325,13 +328,13 @@
                 <p class="education-job-text"><a href="https://dxbcircle.com/en/"> dxbcircle.com</a></p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text"> Software Developer</p>
+                <p class="education-job-text" data-lang-key="education-job-dxbcircle-position"> Software Developer</p>
               </div>
               <div class="col-xs-2">
                 <p class="education-job-text"><strong>2022 - 2024</strong></p>
               </div>
               <div class="col-xs-5">
-                <p class="education-job-text"> Development of real estate portfolio management software. Involved in development of specialized neural network for real estate price and rent estimation.</p>
+                <p class="education-job-text" data-lang-key="education-job-dxbcircle-description"> Development of real estate portfolio management software. Involved in development of specialized neural network for real estate price and rent estimation.</p>
               </div>
             </div>
           </div>
@@ -344,16 +347,16 @@
           <div class="col-xs-10">
             <div class="row">
               <div class="col-xs-2">
-                <p class="education-job-text"> Gamedev (NDA)</p>
+                <p class="education-job-text" data-lang-key="education-job-nda-place"> Gamedev (NDA)</p>
               </div>
               <div class="col-xs-2">
-                <p class="education-job-text"> Unity C# Developer</p>
+                <p class="education-job-text" data-lang-key="education-job-nda-position"> Unity C# Developer</p>
               </div>
 	            <div class="col-xs-2">
                 <p class="education-job-text"><strong>2025</strong></p>
               </div>
               <div class="col-xs-5">
-                <p class="education-job-text"> Development of multiplatform RPG</p>
+                <p class="education-job-text" data-lang-key="education-job-nda-description"> Development of multiplatform RPG</p>
               </div>
             </div>
           </div>
@@ -362,7 +365,7 @@
       </div>
       <a class="anchor" id="certificates-section"></a>
       <div class="well">
-        <h1>Certificates</h1>
+        <h1 data-lang-key="nav-certificates">Certificates</h1>
         <div class="row">
           <div class="col-xs-offset-1 col-xs-10">
             <h3 class="project-title"><a href="https://leetcode.com/u/leakvoid/" target="_blank">Leetcode</a></h3>
@@ -379,17 +382,17 @@
         </div>
       </div>
       <div class="well" id="contact-info-section">
-        <h1>Contact Info</h1>
+        <h1 data-lang-key="nav-contact">Contact Info</h1>
         <div class="row">
           <div class="col-xs-offset-1 col-xs-7">
-            <p><strong>Country: </strong>Russia<p>
-            <p><strong>City: </strong>Moscow</p>
-            <p><strong>Email: </strong>l***d@gmail.com</p>
-            <p><strong>Skype: </strong>leakvoid</p>
-            <p><strong>Phone Number: </strong> +7(903)-58*-**-**</p>
+            <p data-lang-key="contact-country"><strong>Country: </strong>Russia<p>
+            <p data-lang-key="contact-city"><strong>City: </strong>Moscow</p>
+            <p data-lang-key="contact-email"><strong>Email: </strong>l***d@gmail.com</p>
+            <p data-lang-key="contact-telegram"><strong>Telegram: </strong>leakvoid</p>
+            <p data-lang-key="contact-phone"><strong>Phone Number: </strong> +7(903)-58*-**-**</p>
           </div>
           <div class="col-xs-4">
-            <h3>Contact me on:</h3>
+            <h3 data-lang-key="contact-links">Contact me on:</h3>
             <form>
               <button class="btn btn-default btn-circle" formaction="https://www.facebook.com/people/Dmitry-Chernyshev/100011600856103"><i class="fa fa-facebook fa-custom"></i></button>
               <button class="btn btn-default btn-circle" formaction="https://twitter.com/leakvoid"><i class="fa fa-twitter fa-custom"></i></button>
