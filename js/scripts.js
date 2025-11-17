@@ -16,6 +16,7 @@ const translations = {
     // projects
     "new-projects-section": "New Portfolio Projects (Game development)",
     "colony-project": "The colony - medieval town simulator",
+    "inventory-system-project": "Inventory system",
     "mobile-rpg-project": "Mobile RPG mechanics",
     "basic-rpg-project": "Basic RPG combat",
     "not-terraria-project": "Not a terraria (Platformer mechanics)",
@@ -75,6 +76,7 @@ const translations = {
     // projects
     "new-projects-section": "Новые проекты (Gamedev)",
     "colony-project": "Колония - симулятор города",
+    "inventory-system-project": "Система инвентаря",
     "mobile-rpg-project": "Пример мобильной RPG",
     "basic-rpg-project": "RPG боевая система",
     "not-terraria-project": "Not terraria - простой платформер",
